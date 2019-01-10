@@ -20,6 +20,10 @@ exports.run = (client, message, args) => {
         name: "IrCrex",
         value: "You can check it 👉 [HERE](https://ircex.com/markets/cfccgcn) 👈"
       },
+      {
+        name: "Nova",
+        value: "You can check it 👉 [HERE](https://novaexchange.com/market/BTC_CFCC) 👈"
+      },
      
     ],
     timestamp: new Date(),
