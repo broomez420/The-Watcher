@@ -46,6 +46,33 @@ bot.on('ready', () => {
 })  
 //end of console messages
 
+
+
+//------ start first part of invite module ------------ //
+
+// Initialize the invite cache
+const invites = {};
+
+// A pretty useful method to create a delay without blocking the whole script.
+const wait = require('util').promisify(setTimeout);
+
+bot.on('ready', () => {
+  // "ready" isn't really ready. We need to wait a spell.
+  wait(1000);
+
+  // Load all invites for all guilds and save them to the cache.
+  bot.guilds.forEach(g => {
+    g.fetchInvites().then(guildInvites => {
+      invites[g.id] = guildInvites;
+    });
+  });
+});
+//------ end first part of invite module ------------ //
+
+
+
+
+
 // welcome member message module
 bot.on('guildMemberAdd', member => {
   let channel = member.guild.channels.find('name', 'welcome');
@@ -71,6 +98,9 @@ bot.on('guildMemberAdd', member => {
   console.log(`${member}`, "has joined" + `${member.guild.name}`)
 
 });
+
+
+
 // invite module
 bot.on('guildMemberAdd', member => {
   // To compare, we need to load the current invite list.
