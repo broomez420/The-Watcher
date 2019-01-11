@@ -86,7 +86,7 @@ bot.on('guildMemberAdd', member => {
     // Get the log channel (change to your liking)
     const inviteChannel = member.guild.channels.find(channel => channel.name === "invites");
     // A real basic message with the information we need. 
-    logChannel.send(`${member.user.tag} joined using invite code ${invite.code} from ${inviter.tag}. Invite was used ${invite.uses} times since its creation.`);
+    inviteChannel.send(`${member.user.tag} joined using invite code ${invite.code} from ${inviter.tag}. Invite was used ${invite.uses} times since its creation.`);
   });
 });
 
