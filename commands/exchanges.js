@@ -24,6 +24,10 @@ exports.run = (client, message, args) => {
         name: "Nova",
         value: "You can check it 👉 [HERE](https://novaexchange.com/market/BTC_CFCC) 👈"
       },
+      {
+        name: "altmarkets",
+        value: "You can check it 👉 [HERE](https://altmarkets.io/trading/cfccbtc) 👈"
+      },
      
     ],
     timestamp: new Date(),
