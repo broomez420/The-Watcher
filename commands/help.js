@@ -13,9 +13,7 @@ let helpembed = new Discord.RichEmbed()
 .addField("serverinfo", "displays server information")
 .addField("about", "displays what this bot can do")
 .addField("report", "reports user")
-.addField("cfccinfo", "shows CFCC's info & links")
 .addField("8ball", "8ball game")
-.addField("guilds", "shows servers the bot is listed in")
 .addField("ping", "bot responds ping and how many miliseconds")
 .addField("shorten", "shorten url quickly")
 .addField("cat", "shows random cat pics")
@@ -43,6 +41,7 @@ let modembed = new Discord.RichEmbed()
 .addField("say", "get the bot too say something")
 .addField("clear", "like prune/purge only cleaner")
 .addField("prefix", "allows you to change prefix")
+.addField("guilds", "shows servers the bot is listed in")
 .addField("<command> help", "shows usage for command");
 
 try{
