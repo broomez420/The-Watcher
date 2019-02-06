@@ -14,7 +14,7 @@ exports.run = (client, message, args) => {
     fields: [
       {
         name: "**__Specifications__**",
-        value: "type `-specs` to get a list of our coin specs"
+        value: "type `-omenspecs` to get a list of our coin specs"
       },
       {
         name: "**__Exchanges__**",
