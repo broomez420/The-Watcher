@@ -25,6 +25,10 @@ exports.run = (client, message, args) => {
         name: "**__Specifications__**",
         value: "type `-specs` to get a list of our coin specs"
       },
+      {
+        name: "**__Exchanges__**",
+        value: "type `-cfcc-exchanges` to get a list of our exchanges"
+      },
       
       {
         name: "BitcoinTalkThread",
