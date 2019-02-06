@@ -19,7 +19,9 @@ let helpembed = new Discord.RichEmbed()
 .addField("ping", "bot responds ping and how many miliseconds")
 .addField("shorten", "shorten url quickly")
 .addField("cat", "shows random cat pics")
-.addField("doggo", "shows random dog pics");
+.addField("doggo", "shows random dog pics")
+.addField("cfccinfo", "CFCC info")
+.addField("omeninfo", "OMEN info");
 
 message.channel.send(helpembed);
 
