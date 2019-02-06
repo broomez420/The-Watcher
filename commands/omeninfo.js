@@ -8,7 +8,7 @@ exports.run = (client, message, args) => {
       name: client.user.username,
       icon_url: client.user.avatarURL
     },
-    title: "CryptoFightClub",
+    title: "OMEN",
     url: "https://cryptofightclubco.in",
     description: "OMEN Coin info & links.",
     fields: [
