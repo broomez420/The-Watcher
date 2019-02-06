@@ -28,6 +28,18 @@ exports.run = (client, message, args) => {
         name: "altmarkets",
         value: "You can check it 👉 [HERE](https://altmarkets.io/trading/cfccbtc) 👈"
       },
+      {
+        name: "bitexlive",
+        value: "You can check it 👉 [HERE](https://bitexlive.com/exchange/BTC-CFCC) 👈"
+      },
+      {
+        name: "MySpeedTrade",
+        value: "You can check it 👉 [HERE](https://myspeedtrade.com/markets/cfccbtc?pinned=false) 👈"
+      },
+      {
+        name: "MyTrade",
+        value: "You can check it 👉 [HERE](https://trade.mct.plus) 👈"
+      },
      
     ],
     timestamp: new Date(),
@@ -47,8 +59,8 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'exchanges',
+  name: 'cfcc-exchanges',
   description: 'shows CFCCs exchanges.',
-  usage: 'exchanges'
+  usage: 'cfcc-exchanges'
 };
 
