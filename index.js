@@ -138,6 +138,10 @@ bot.on('guildMemberRemove', member => {
       channel.sendEmbed(embed);
 });
 
+bot.on('guildMemberRemove' message => {
+    message.channel.send("BYE FELICIA", {files: ["https://media.giphy.com/media/13Yjln8dW18nEA/giphy.gif"]});
+});
+
 // leave member DM message module
 bot.on('guildMemberRemove', member => {
   console.log(`${member}` + "has left " + `${member.guild.name}` + " Sending leave message now")
