@@ -40,6 +40,9 @@ module.exports.run = async (bot, message, args) => {
            footer: {
              icon_url: message.author.avatarURL,
              text: message.author.username
+		   let channel = message.mentions.channels();
+        let 📣announcements📣 = args.slice(1).join(" ");
+        channel.send(📣announcements📣);
            }
          }
      });
