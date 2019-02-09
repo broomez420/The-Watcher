@@ -230,9 +230,7 @@ bot.on("message", async message => {
   
   });
   
-});
-
-bot.on("message", message => {
+  bot.on("message", message => {
     if(message.author.bot) return;
 
     let messageArray = message.content.split(" ");
@@ -250,6 +248,10 @@ bot.on("message", message => {
         channel.send(📣announcements📣);
     }
 }
+  
+});
+
+
 
 
 bot.login(process.env.BOT_TOKEN);
