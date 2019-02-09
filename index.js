@@ -245,9 +245,9 @@ bot.on("message", message => {
 
     if(command === '-ann') {
         let channel = message.mentions.channels();
-        let announcement = args.slice(1).join(" ");
+        let 📣announcements📣 = args.slice(1).join(" ");
 
-        channel.send(announcement);
+        channel.send(📣announcements📣);
     }
 }
 
