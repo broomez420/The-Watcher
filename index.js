@@ -230,24 +230,7 @@ bot.on("message", async message => {
   
   });
   
-  bot.on("message", message => {
-    if(message.author.bot) return;
-
-    let messageArray = message.content.split(" ");
-    let command = messageArray[0];
-    let args = messageArray.slice(1);
-
-    if(message.channel.type === "dm") return;
-
-    if(!message.content.startsWith('-')) return;
-
-    if(command === '-ann') {
-        let channel = message.mentions.channels();
-        let 📣announcements📣 = args.slice(1).join(" ");
-
-        channel.send(📣announcements📣);
-    }
-}
+  
   
 });
 
