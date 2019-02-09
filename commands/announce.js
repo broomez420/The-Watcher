@@ -22,32 +22,48 @@ module.exports.run = async (bot, message, args) => {
 //     };
 // }
 	
-     if (message.member.hasPermission("ADMINISTRATOR")) {
-      let args = message.content.split(" ").slice(1).join(" ");
-   let split = args.split("-");
-   let url = args[2];
-       message.channel.sendMessage("@everyone", {
-         embed: {
-           color: 0xFFFF00,
-           author: {
-             name: message.author.username,
-             icon_url: message.author.avatarURL
-           },
-           title: ":information_source: Announcement",
-           description: split[0],
-           url: split[1],
-           timestamp: new Date(),
-           footer: {
-             icon_url: message.author.avatarURL,
-             text: message.author.username
-		   let channel = message.mentions.channels();
+//      if (message.member.hasPermission("ADMINISTRATOR")) {
+//       let args = message.content.split(" ").slice(1).join(" ");
+//    let split = args.split("-");
+//    let url = args[2];
+//        message.channel.sendMessage("@everyone", {
+//          embed: {
+//            color: 0xFFFF00,
+//            author: {
+//              name: message.author.username,
+//              icon_url: message.author.avatarURL
+//            },
+//            title: ":information_source: Announcement",
+//            description: split[0],
+//            url: split[1],
+//            timestamp: new Date(),
+//            footer: {
+//              icon_url: message.author.avatarURL,
+//              text: message.author.username
+// 		   let channel = message.mentions.channels();
+//         let 📣announcements📣 = args.slice(1).join(" ");
+//         channel.send(📣announcements📣);
+//            }
+//          }
+//      });
+//    }
+//  }
+	
+	    let messageArray = message.content.split(" ");
+    let command = messageArray[0];
+    let args = messageArray.slice(1);
+
+    if(message.channel.type === "dm") return;
+
+    if(!message.content.startsWith('-')) return;
+
+    if(command === '-announce') {
+        let channel = message.mentions.channels();
         let 📣announcements📣 = args.slice(1).join(" ");
+
         channel.send(📣announcements📣);
-           }
-         }
-     });
-   }
- }
+    }
+}
 module.exports.help = {
         name: "announce" 
 }
