@@ -128,15 +128,16 @@ bot.on('guildMemberRemove', member => {
       let embed = new Discord.RichEmbed()
       .setColor('RANDOM')
       .setThumbnail(memberavatar)
-      .addField('Name:', `${member}`)
-      .addField('Has Let the Server', ';(')
+      .addField('Name:', ${member})
+      .addField('Has Left the Server', ';(')
       .addField('Bye Bye :(', 'We will all miss you!')
-      .addField('The server now has', `${member.guild.memberCount}` + " members")
-      .setFooter(`**${member.guild.name}`)
+      .addField('The server now has', ${member.guild.memberCount} + " members")
+      .setFooter(**${member.guild.name})
       .setTimestamp()
 
-      channel.sendEmbed(embed);
+      channel.send("Bye Felicia",embed);
 });
+
 
 
 
