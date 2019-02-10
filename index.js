@@ -136,7 +136,7 @@ bot.on('guildMemberRemove', member => {
       .setTimestamp()
 
       channel.sendEmbed(embed);
-      message.channel.send("https://media.giphy.com/media/13Yjln8dW18nEA/giphy.gif");
+      
 });
 
 
