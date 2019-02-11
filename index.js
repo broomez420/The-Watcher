@@ -147,6 +147,12 @@ bot.on('guildMemberRemove', member => {
   console.log(`${member}` + "has left " + `${member.guild.name}` + " Sending leave message now")
   console.log("Leave Message Sent")
 });
+
+bot.on('message', async message => {
+    if (message.channel.type == 'dm') {
+        message.reply("You are DMing me now!");
+    }
+});
   
 
 bot.on("message", async message => {
