@@ -139,17 +139,7 @@ bot.on('guildMemberRemove', member => {
       
 });
 
-bot.on('guildMemberRemove', member => {
-  let channel = member.guild.channels.find('name', 'leave');
-     if (!channel) return;
-     let embed = new Discord.RichEmbed()
-     .setColor('RANDOM')
-     .addField('Bye Felicia')
-     .setURL("https://media.giphy.com/media/13Yjln8dW18nEA/giphy.gif")
-     
-     channel.sendEmbed(embed);
 
-});
 
 
 // leave member DM message module
