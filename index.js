@@ -132,7 +132,6 @@ bot.on('guildMemberRemove', member => {
       .addField('Has Left the Server', ';(')
       .addField('Bye Bye :(', 'We will all miss you!')
       .addField('The server now has', `${member.guild.memberCount}` + " members")
-      .setURL("https://media.giphy.com/media/13Yjln8dW18nEA/giphy.gif") 
       .setFooter(`**${member.guild.name}`)
       .setTimestamp()
 
