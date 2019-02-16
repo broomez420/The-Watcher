@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
    let dMessage = args.join(" ").slice(22);
    if(dMessage.length < 1) return message.reply('You must supply a message!')
 
-     dUser.send(`${dUser} <@!528992402132959244> sent you: ${dMessage}, Please note i can not see what you sent back if you want to talk to me you can talk to me in one of the server i protect`)
+     dUser.send(`<@!528992402132959244> sent you: ${dMessage}, (***___Please note i can not see what you sent back if you want to talk to me you can talk to me in one of the server i protect___***)`)
 
      message.author.send(`${message.author} You have sent your message to ${dUser}`)
 
