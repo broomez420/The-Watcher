@@ -50,7 +50,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'thewatcherinfo',
+  name: 'watcher',
   description: 'shows my social info.',
-  usage: 'thewatcherinfo'
+  usage: 'watcher'
 };
