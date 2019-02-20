@@ -49,7 +49,7 @@ exports.run = (client, message, args) => {
     timestamp: new Date(),
     footer: {
       icon_url: client.user.avatarURL,
-      text: "© Broomez420 2018-2019"
+      text: "© OmenCoin 2018-2019"
     }
   }
 });
