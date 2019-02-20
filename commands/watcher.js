@@ -28,7 +28,7 @@ exports.run = (client, message, args) => {
       },
           
       {
-        name: "Some Discord Servers My Bot Is In",
+        name: "Some Discord Servers I Am In",
         value: "[CoinZone](https://discord.gg/mVArCEt), [OmenCoin](https://discord.gg/gajgDNV), [CryptoFightClubCoin](https://discord.gg/KupRdUh)"
       },
 
