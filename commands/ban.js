@@ -1,19 +1,11 @@
 const Discord = require("discord.js");
 
-
 module.exports.run = async (bot, message, args) => {
-    message.delete();
-    if(!message.member.hasPermission("BAN_MEMBERS")) return errors.noPerms(message, "BAN_MEMBERS");
-    if(args[0] == "help"){
-      message.reply("Usage: -ban <user> <reason>");
-      return;
-    }
     let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-    if(!bUser) return errors.cantfindUser(message.channel);
-    if(bUser.id === bot.user.id) return errors.botuser(message); 
+    if(!bUser) return message.channel.send("Can't find user!");
     let bReason = args.join(" ").slice(22);
-    if(!bReason) return errors.noReason(message.channel);
-    if(bUser.hasPermission("MANAGE_MESSAGES")) return errors.equalPerms(message, bUser, "MANAGE_MESSAGES");
+    if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.channel.send("No can do pal!");
+    if(bUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("That person can't be kicked!");
 
     let banEmbed = new Discord.RichEmbed()
     .setDescription("~Ban~")
@@ -24,11 +16,11 @@ module.exports.run = async (bot, message, args) => {
     .addField("Time", message.createdAt)
     .addField("Reason", bReason);
 
-    let banchannel = message.guild.channels.find(`name`, "kicked-banned");
-    if(!banchannel) return message.channel.send("Can't find kicked-banned channel.");
+    let incidentchannel = message.guild.channels.find(`name`, "kicked-banned");
+    if(!incidentchannel) return message.channel.send("Can't find kicked-banned channel.");
 
     message.guild.member(bUser).ban(bReason);
-    banchannel.send(banEmbed);
+    incidentchannel.send(banEmbed);
 }
 
 module.exports.help = {
