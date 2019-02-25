@@ -28,7 +28,7 @@ exports.run = (client, message, args) => {
       
       {
         name: "Block Explorer",
-        value: "[Block Explorer](https://blockexplorer.cryptofightclubco.in)"
+        value: "[Block Explorer](https://http://omen.freakhouse.us)"
       },
       
       {
