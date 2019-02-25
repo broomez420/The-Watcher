@@ -20,6 +20,18 @@ exports.run = (client, message, args) => {
         name: "STEX",
         value: "You can check it 👉 [HERE](https://app.stex.com/en/basic-trade/pair/BTC/OMEN/1D) 👈"
       }, 
+       {
+        name: "wadax",
+        value: "You can check it 👉 [HERE](https://wadax.io/trade/OMENBTC) 👈"
+      },
+      {
+        name: "bitsahani",
+        value: "You can check it 👉 [HERE](https://bitsahani.com/exchange/OMEN-BTC) 👈"
+      }, 
+      {
+        name: "ircrex",
+        value: "You can check it 👉 [HERE](https://ircex.com/markets/omennbtc) 👈"
+      }, 
     ],
     timestamp: new Date(),
     footer: {
