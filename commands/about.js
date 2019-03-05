@@ -13,7 +13,7 @@ module.exports.run = async (bot, message, args) => {
 	.addField("General", "built in url shortner")
 	.addField("Logs", "logs reports, warnings, kicks, bans")
 	.addField("Other", "shows users who join, leave.. shows when channel is created, deleted..")
-        .addField("Created by", bot.users.get("392082408050130945"));
+        .addField("Created by", bot.users.get("546320749435158528"));
 
         return message.channel.send(botembed);
 }
