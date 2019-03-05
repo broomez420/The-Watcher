@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
         .setThumbnail(bicon)
         .addField("Bot Name", bot.user.username)
         .addField("Created On", bot.user.createdAt)
-        .addField("Created by", bot.users.get("392082408050130945"));
+        .addField("Created by", bot.users.get("546320749435158528"));
 
         return message.channel.send(botembed);
 }
