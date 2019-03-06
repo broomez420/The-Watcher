@@ -28,7 +28,7 @@ exports.run = (client, message, args) => {
       },
       
       {
-        name: "**__CRYPTO FIGH CLUB POS__**",
+        name: "**__CRYPTO FIGHT CLUB POS__**",
         value: "[Link](https://db.tt/HWS0XTJImx)"
       },
       
