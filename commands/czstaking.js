@@ -77,12 +77,12 @@ exports.run = (client, message, args) => {
         value: "[Link](https://db.tt/mhfXJTAJLU)"
       },
       
-            {
+      {
         name: "**__ROCKETCOIN POS__**",
         value: "[Link](https://db.tt/UGmh8BaM1K)"
       },
       
-            {
+      {
         name: "**__ELECTRA COIN__**",
         value: "[Link](https://db.tt/hOoB2C0SvC)"
       },
@@ -121,6 +121,6 @@ exports.conf = {
 
 exports.help = {
   name: 'czstaking',
-  description: 'shows CoinZone's staking pool info.',
+  description: 'shows CoinZone Staking info.',
   usage: 'czstaking'
 };
