@@ -9,7 +9,7 @@ exports.run = (client, message, args) => {
       icon_url: client.user.avatarURL
     },
     title: "TheWatcherInfo",
-    url: "https://cryptofightclubco.in",
+    url: "https://discord.gg/mNNsfsg",
     description: "The Watcher info & links.",
     fields: [      
       {
@@ -23,13 +23,18 @@ exports.run = (client, message, args) => {
       },
       
       {
+        name: "The Watcher Bot Server",
+        value: "[The Watcher Bot Server](https://discord.gg/mNNsfsg)"
+      },
+      
+      {
         name: "Become a Patreon",
         value: "[Become a Patreon](https://www.patreon.com/TheWatcher247)"
       },
           
       {
         name: "Some Discord Servers I Am In",
-        value: "[CoinZone](https://discord.gg/mVArCEt), [OmenCoin](https://discord.gg/gajgDNV), [CryptoFightClubCoin](https://discord.gg/KupRdUh)"
+        value: "[CoinZone](https://discord.gg/mVArCEt), [OmenCoin](https://discord.gg/gajgDNV), [CryptoFightClubCoin](https://discord.gg/KupRdUh), [OPC&OPCX](https://discord.gg/26XeDPX), [InfoCoin](https://discord.gg/wBhVsyu), [SpectreSecurity](https://discord.gg/xHhGkhx)"
       },
 
     ],
