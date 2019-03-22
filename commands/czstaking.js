@@ -106,6 +106,16 @@ exports.run = (client, message, args) => {
         name: "**__MCPC POS__**",
         value: "[Link](https://db.tt/PC3Q1GPlan)"
       },
+      
+      {
+        name: "**__VIBOOK POS__**",
+        value: "[Link](https://db.tt/81B6tywdpV)"
+      },
+            
+      {
+        name: "**__VENOX POS__**",
+        value: "[Link](https://db.tt/9Wal8gldN9)"
+      },
 
     ],
     timestamp: new Date(),
