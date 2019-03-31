@@ -23,6 +23,21 @@ exports.run = (client, message, args) => {
       },
       
       {
+        name: "Facebook",
+        value: "[Facebook](https://www.facebook.com/TheWatcherBot)"
+      },
+      
+      {
+        name: "Website",
+        value: "[Website](https://thewatcherbot.com)"
+      },
+      
+      {
+        name: "Bitcoin Talk Thread",
+        value: "[Bitcoin Talk Thread](https://bitcointalk.org/index.php?topic=5126420.new#new)"
+      },
+      
+      {
         name: "The Watcher Bot Server",
         value: "[The Watcher Bot Server](https://discord.gg/mNNsfsg)"
       },
