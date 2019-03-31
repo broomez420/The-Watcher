@@ -41,6 +41,11 @@ exports.run = (client, message, args) => {
         name: "The Watcher Bot Server",
         value: "[The Watcher Bot Server](https://discord.gg/mNNsfsg)"
       },
+            
+      {
+        name: "TrustPilot Reviews",
+        value: "[TrustPilot Reviews](https://thewatcherbot.com/reviews.html)"
+      },
       
       {
         name: "Become a Patreon",
