@@ -93,9 +93,15 @@ bot.on('guildMemberAdd', member => {
       channel.sendEmbed(embed);
 });
 
+
+
 bot.on('guildMemberAdd', member => {
 
   console.log(`${member}`, "has joined" + `${member.guild.name}`)
+  
+  // add role on join
+  var role = member.guild.roles.find('name', 'User');
+  member.addRole(unverified)
 
 });
 
@@ -147,6 +153,10 @@ bot.on('guildMemberRemove', member => {
   console.log(`${member}` + "has left " + `${member.guild.name}` + " Sending leave message now")
   console.log("Leave Message Sent")
 });
+
+
+
+
 
 
   
