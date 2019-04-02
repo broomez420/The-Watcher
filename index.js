@@ -98,10 +98,7 @@ bot.on('guildMemberAdd', member => {
 bot.on('guildMemberAdd', member => {
 
   console.log(`${member}`, "has joined" + `${member.guild.name}`)
-  
-  // add role on join
-  var role = member.guild.roles.find('name', 'User');
-  member.addRole(unverified)
+ 
 
 });
 
