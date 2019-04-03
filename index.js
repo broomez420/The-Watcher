@@ -30,7 +30,7 @@ fs.readdir("./commands/", (err, files) => {
 bot.on('ready', () => {
   setInterval(async ()=>{
       
-      let textList = ['How to Manage','lurking','Learning','Protecting 8 servers','https://discord.gg/mNNsfsg','keeping 6000+ users safe','reaching 1.5 mil users','updating database...','scanning database']
+      let textList = ['How to Manage','lurking','Learning','Protecting 9 servers','discord.gg/mNNsfsg','Reporting UIDs','Scanning Servers...','keeping 8000 users safe','reaching 1.6 mil users','updating database...','scanning database...']
       var text = textList[Math.floor(Math.random() * textList.length)];
       bot.user.setActivity(text , { type: 'WATCHING' })
   },60000) // milliseconds
