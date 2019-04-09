@@ -51,10 +51,25 @@ exports.run = (client, message, args) => {
         name: "Become a Patreon",
         value: "[Become a Patreon](https://www.patreon.com/TheWatcher247)"
       },
+      
+      {
+        name: "CoinGecko",
+        value: "[CoinGecko](https://www.coingecko.com/en/coins/thewatcherbottoken)"
+      },
+      
+      {
+        name: "CoinPaprika",
+        value: "[CoinPaprika](https://coinpaprika.com/coin/twbt-thewatcherbottoken/)"
+      },
+            
+      {
+        name: "Exchanges",
+        value: "[Altmarkets](https://altmarkets.io/trading/twbtbtc)"
+      },
           
       {
         name: "Some Discord Servers I Am In",
-        value: "[CoinZone](https://discord.gg/mVArCEt), [OmenCoin](https://discord.gg/gajgDNV), [CryptoFightClubCoin](https://discord.gg/KupRdUh), [OPC&OPCX](https://discord.gg/26XeDPX), [InfoCoin](https://discord.gg/wBhVsyu), [SpectreSecurity](https://discord.gg/xHhGkhx)"
+        value: "[OPC&OPCX](https://discord.gg/26XeDPX), [InfoCoin](https://discord.gg/wBhVsyu), [SpectreSecurity](https://discord.gg/xHhGkhx), [BitcoinCryptoWorld](https://discord.gg/ApBg4Uu), [CryptoMasters](https://discord.gg/Gr7A5ME), [CryptoWorld](https://discord.gg/accGvhh)"
       },
 
     ],
